@@ -128,7 +128,7 @@ footer {
     right: 0;
     height: 40px;
     z-index: 3;
-    bottom: 20px;
+    top: 120px;
 } 
 .grid-portfolio .project-name a{
     text-decoration: none;
@@ -155,8 +155,16 @@ button.primary-btn{
 
 button.primary-btn:hover{
     background-color: #666;
+    transition: background-color 0.5s ease-in-out;
 }
 
+.item:hover .project-name{
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding-top: 25%;
+    transition: 0.5s ease-out;
+}
 @media only screen and (max-width: 980px) {
     .wrap {
         grid-template-columns: 10px 700px 1fr;
