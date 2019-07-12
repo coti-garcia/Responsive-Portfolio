@@ -173,5 +173,31 @@ button.primary-btn:hover{
 @media only screen and (max-width: 640px) {
     .wrap {
         grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: auto auto 1fr 60px
+    }
+    .logo{
+        height: auto;
+        font-size: 20px;
+        padding:20px;
+    }
+    .grid-portfolio {
+        grid-template: repeat(5, auto)/100%;
+    }
+    .about-me img{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    header {
+        height: auto;
+    }
+    header .container{
+        display: block;
+    }
+    .main-nav {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: center;
     }
 }
