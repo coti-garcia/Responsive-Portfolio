@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .wrap{
     display: grid;
-    grid-template-rows: 80px 1fr 60px;
+    grid-template-rows: 80px auto 1fr 60px;;
     grid-template-columns: 1fr 960px 1fr;
     min-height: 100vh;
 }
@@ -98,7 +98,7 @@ p{
 }
 
 footer {
-    grid-area: 3/1/4/4;
+    grid-area: 4/1/5/4;
     background:  #666666;
     text-align: center;
     border-top: solid 4px #4aaaa5;
@@ -166,12 +166,12 @@ button.primary-btn:hover{
     }
 }
 @media only screen and (max-width: 768px) {
-    body{
-        background: blue;
+    .wrap {
+        grid-template-columns: 30px 1fr 30px;
     }
 }
 @media only screen and (max-width: 640px) {
-    body{
-        background: teal;
+    .wrap {
+        grid-template-columns: 20px 1fr 20px;
     }
 }
